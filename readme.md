@@ -33,23 +33,18 @@ Para reproduzir este projeto, foram utilizados:
 ## Código Utilizado:
 
 
-
+```cpp
 int ldr = A0;
 
 int ledVerde = 10;
-
 int ledAmarelo = 11;
-
 int ledVermelho = 12;
-
 int buzzer = 13;
 
 int valorLDR = 0;
 
-//LIMITES
 int nivelVerde = 250;
 int nivelAmarelo = 590;
-
 
 int leituraSuave()
 {
@@ -76,12 +71,10 @@ void setup()
 
 void loop()
 {
-    // leitura com filtro
     valorLDR = leituraSuave();
 
     Serial.println(valorLDR);
 
-  
     if (valorLDR <= nivelVerde)
     {
         digitalWrite(ledVerde, HIGH);
@@ -90,17 +83,13 @@ void loop()
 
         noTone(buzzer);
     }
-
- 
     else if (valorLDR <= nivelAmarelo)
     {
         digitalWrite(ledVerde, LOW);
         digitalWrite(ledAmarelo, HIGH);
         digitalWrite(ledVermelho, LOW);
 
-       
         delay(200);
-       
         delay(500);
     }
     else
@@ -116,4 +105,5 @@ void loop()
     }
 
     delay(200);
-    }
+}
+```
