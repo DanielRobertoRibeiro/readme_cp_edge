@@ -30,3 +30,94 @@ Para reproduzir este projeto, foram utilizados:
    - Ajuste os limiares de luminosidade nas variáveis de controle, se necessário, de acordo com o ambiente.
 3. **Execução:** - Carregue o código no Arduino.
    - Abra o Monitor Serial para acompanhar as leituras em tempo real.
+## Código Utilizado:
+
+// Sistema de monitoramento de luminosidade - Vinheria Agnello
+// LDR -> A0
+// LED Verde -> pino 10
+// LED Amarelo -> pino 11
+// LED Vermelho -> pino 12
+// Buzzer -> pino 13
+
+int ldr = A0;
+
+int ledVerde = 10;
+int ledAmarelo = 11;
+int ledVermelho = 12;
+int buzzer = 13;
+
+int valorLDR = 0;
+
+//LIMITES
+int nivelVerde = 250;
+int nivelAmarelo = 590;
+
+
+int leituraSuave()
+{
+    int soma = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        soma += analogRead(ldr);
+        delay(5);
+    }
+
+    return soma / 10;
+}
+
+void setup()
+{
+    pinMode(ledVerde, OUTPUT);
+    pinMode(ledAmarelo, OUTPUT);
+    pinMode(ledVermelho, OUTPUT);
+    pinMode(buzzer, OUTPUT);
+
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    // leitura com filtro
+    valorLDR = leituraSuave();
+
+    Serial.println(valorLDR);
+
+  
+    if (valorLDR <= nivelVerde)
+    {
+        digitalWrite(ledVerde, HIGH);
+        digitalWrite(ledAmarelo, LOW);
+        digitalWrite(ledVermelho, LOW);
+
+        noTone(buzzer);
+    }
+
+ 
+    else if (valorLDR <= nivelAmarelo)
+    {
+        digitalWrite(ledVerde, LOW);
+        digitalWrite(ledAmarelo, HIGH);
+        digitalWrite(ledVermelho, LOW);
+
+       
+        delay(200);
+       
+        delay(500);
+    }
+
+    
+    else
+    {
+        digitalWrite(ledVerde, LOW);
+        digitalWrite(ledAmarelo, LOW);
+        digitalWrite(ledVermelho, HIGH);
+
+        tone(buzzer, 1000);
+        delay(300);
+        noTone(buzzer);
+        delay(300);
+    }
+
+    delay(200);
+}
