@@ -35,9 +35,13 @@ Para reproduzir este projeto, foram utilizados:
 
 
 int ldr = A0;
+
 int ledVerde = 10;
+
 int ledAmarelo = 11;
+
 int ledVermelho = 12;
+
 int buzzer = 13;
 
 int valorLDR = 0;
