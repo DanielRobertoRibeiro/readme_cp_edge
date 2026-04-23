@@ -32,15 +32,9 @@ Para reproduzir este projeto, foram utilizados:
    - Abra o Monitor Serial para acompanhar as leituras em tempo real.
 ## Código Utilizado:
 
-// Sistema de monitoramento de luminosidade - Vinheria Agnello
-// LDR -> A0
-// LED Verde -> pino 10
-// LED Amarelo -> pino 11
-// LED Vermelho -> pino 12
-// Buzzer -> pino 13
+
 
 int ldr = A0;
-
 int ledVerde = 10;
 int ledAmarelo = 11;
 int ledVermelho = 12;
@@ -105,8 +99,6 @@ void loop()
        
         delay(500);
     }
-
-    
     else
     {
         digitalWrite(ledVerde, LOW);
@@ -120,4 +112,4 @@ void loop()
     }
 
     delay(200);
-}
+    }
