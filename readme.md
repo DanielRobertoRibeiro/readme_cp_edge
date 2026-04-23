@@ -12,7 +12,7 @@ Este projeto foi desenvolvido para atender às necessidades da Vinheria Agnello,
 Para reproduzir este projeto, foram utilizados:
 - 1x Arduino Uno R3
 - 1x Sensor de Luz LDR
-- 1x Resistor de 10kΩ (para o divisor de tensão do LDR)
+- 1x Resistor de 1kΩ (para o divisor de tensão do LDR)
 - 3x LEDs (Verde, Amarelo, Vermelho)
 - 3x Resistores de 220Ω (para os LEDs)
 - 1x Buzzer (Piezo)
