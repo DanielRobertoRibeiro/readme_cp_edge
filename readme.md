@@ -19,8 +19,8 @@ Para reproduzir este projeto, foram utilizados:
 - Protoboard e Jumpers
 
 **Software:**
-- Linguagem C++ (Arduino Framework)
-- Simulador: Tinkercad ou Wokwi
+- Linguagem C e C++ (Arduino Framework)
+- Simulador: Tinkercad 
 
 ## 🚀 Instruções de Reprodução
 1. **Montagem do Hardware:** - Conecte o LDR à porta analógica `A0`.
