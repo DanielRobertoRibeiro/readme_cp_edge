@@ -1,5 +1,10 @@
 # Sistema de Monitoramento de Luminosidade - Vinheria Agnello 🍷
 
+## link para os vídeos no Youtube:
+-https://youtu.be/A4fUiyLhFDE
+-https://youtu.be/DDMWAEOfUz8
+
+
 ## Link para Acesso do Projeto no Tinkercad:
 https://www.tinkercad.com/login?next=%2Fthings%2F7ZhOxJRX4Hx-fantabulous-luulia-vihelmo%2Feditel%3FreturnTo%3Dhttps%253A%252F%252Fwww.tinkercad.com%252Fdashboard%26sharecode%3DH6A1Wudgk9ReFwUpJC8JRP4ziqe-Cicnk_9mia4LrOc%26classId%3Daef5e5e2-9265-4715-8f5b-4d29d715d826%26assignmentId%3D9914cb78-252c-48e7-910b-0b86913ff72b%26submissionId%3Ddcd0b614-53c9-6a85-9e5c-48016504d9c3
 
@@ -29,10 +34,10 @@ Para reproduzir este projeto, foram utilizados:
 1. **Montagem do Hardware:** - Conecte o LDR à porta analógica `A0`.
    - Conecte os LEDs Verde, Amarelo e Vermelho às portas digitais `10`, `11` e `12` respectivamente.
    - Conecte o Buzzer à porta digital `13`.
-2. **Configuração do Código:** - Clone este repositório ou copie o código fonte.
+2. **Configuração do Código:** -Copie o código fonte logo abaixo.
    - Ajuste os limiares de luminosidade nas variáveis de controle, se necessário, de acordo com o ambiente.
 3. **Execução:** - Carregue o código no Arduino.
-   - Abra o Monitor Serial para acompanhar as leituras em tempo real.
+   - Abra o Monitor Serial para acompanhar as leituras em tempo real para melhor compreensão.
 ## Código Utilizado:
 
 
