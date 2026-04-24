@@ -1,5 +1,8 @@
 # Sistema de Monitoramento de Luminosidade - Vinheria Agnello 🍷
 
+## Link para Acesso do Projeto no Tinkercad:
+- **https://www.tinkercad.com/login?next=%2Fthings%2F7ZhOxJRX4Hx-fantabulous-luulia-vihelmo%2Feditel%3FreturnTo%3Dhttps%253A%252F%252Fwww.tinkercad.com%252Fdashboard%26sharecode%3DH6A1Wudgk9ReFwUpJC8JRP4ziqe-Cicnk_9mia4LrOc%26classId%3Daef5e5e2-9265-4715-8f5b-4d29d715d826%26assignmentId%3D9914cb78-252c-48e7-910b-0b86913ff72b%26submissionId%3Ddcd0b614-53c9-6a85-9e5c-48016504d9c3
+
 ## 📝 Descrição do Projeto
 Este projeto foi desenvolvido para atender às necessidades da Vinheria Agnello, focando na preservação da qualidade dos vinhos através do monitoramento constante da luminosidade ambiente. Utilizando um sistema baseado em Arduino e um sensor LDR (Fotorresistor), o dispositivo categoriza a incidência de luz em três níveis (Adequado, Alerta e Crítico), fornecendo feedback visual e sonoro imediato.
 
